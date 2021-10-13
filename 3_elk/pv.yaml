@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv00001
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    path: /ifs/kubernetes/pv00001
+    server: 192.168.11.196
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv00002
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    path: /ifs/kubernetes/pv00002
+    server: 192.168.11.196
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv00003
+spec:
+  capacity:
+    storage: 50Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    path: /ifs/kubernetes/pv00003
+    server: 192.168.11.196
+
+
+
+
